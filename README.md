@@ -4,6 +4,9 @@
 
 ## Build Setup
 
+# 解说地址
+[点我前往](https://blog.capricediary.com/default/122.html)
+
 ``` bash
 # install dependencies
 npm install

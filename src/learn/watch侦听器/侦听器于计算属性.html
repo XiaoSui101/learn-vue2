@@ -11,28 +11,24 @@
 
 <body>
     <div id="app">
-        <input v-model="username" type="text" />
-        <p>我的名字是：{{username}}</p>
-
+        <!-- <input v-model="username" type="text" />
+        <p>我的名字是：{{username}}</p> -->
     </div>
     <script>
         new Vue({
             el: '#app',
             data: {
-                username: '假面骑士'
+                question: '',
             },
             watch: {
-                username: [
-                    'usernameChange',
-                    function () {},
-                    {
-                        handler() {},
-                        deep: true,
-                        immediate: true
-                    }
-                ]
+                question () {
+                    setTimeout(() => {
+                        alert(this.question);
+                    }, 1000)
+                }
             }
         })
+
     </script>
 </body>
 

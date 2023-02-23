@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="../../../node_modules/vue/dist/vue.min.js"></script>
+</head>
+
+<body>
+    <div id="app">
+        <!-- <input v-model="username" type="text" />
+        <p>我的名字是：{{username}}</p> -->
+
+    </div>
+    <script>
+
+        // 1.三个参数，一参为被侦听的数据；二参为数据改变时执行的回调函数；三参可选，为设置的选项对象
+        vm.$watch(
+            'msg',
+            function(){
+                //干了点坏事
+            },
+            {
+                deep: Boolean,
+                immediate: Boolean
+            }
+        )
+
+            // 2. 二个参数，一参为被侦听的数据；而参为选项对象，其中 handler 属性为必需，是数据改变时执行的回调函数，其他属性可选。
+        vm.$watch(
+            'msg',
+            {
+                handler(){
+                    //干了点坏事
+                },
+                deep: Boolean,
+                immediate: Boolean
+            }
+        )
+    </script>
+</body>
+
+</html>

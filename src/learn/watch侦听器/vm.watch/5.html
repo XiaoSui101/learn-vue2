@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="../../../node_modules/vue/dist/vue.min.js"></script>
+</head>
+
+<body>
+    <div id="app">
+        <!-- <input v-model="username" type="text" />
+        <p>我的名字是：{{username}}</p> -->
+    </div>
+    <script>
+
+        const unwatch = vm.$watch('msg', function () {
+            // 干了点坏事
+            unwatch();    // 此时会报错
+        }, {
+            immediate: true
+        })
+
+    </script>
+</body>
+
+</html>
