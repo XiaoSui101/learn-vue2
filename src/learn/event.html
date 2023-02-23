@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="../../node_modules/vue/dist/vue.min.js"></script>
+</head>
+
+<body>
+    <div id="app">
+        <p>我的存款余额是：{{ money }}</p>
+        <button @click="add($event)">加钱</button>
+    </div>
+    <script>
+        new Vue({
+            el: '#app',
+            data: {
+                money: 0,
+            },
+            methods: {
+                //不传参数时，默认收到的参数是事件对象event
+                add($event) {
+                    this.money += 1;
+                    if (this.money % 2 === 0) {
+                        $event.target.style.backgroundColor = 'red';
+                    } else {
+                        $event.target.style.backgroundColor = 'green';
+                    }
+                }
+            }
+        })
+    </script>
+</body>
+
+</html>

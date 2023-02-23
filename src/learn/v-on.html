@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="../../node_modules/vue/dist/vue.min.js"></script>
+</head>
+
+<body>
+    <div id="app">
+        <p>我的存款余额是：{{ money }}</p>
+        <button @click="addMoney(9999)">得加钱</button>
+    </div>
+    <script>
+        new Vue({
+            el: '#app',
+            data: {
+                money: 0,
+            },
+            methods: {
+                addMoney: function(n) {
+                    this.money += n;
+                }
+            }
+        })
+    </script>
+</body>
+
+</html>

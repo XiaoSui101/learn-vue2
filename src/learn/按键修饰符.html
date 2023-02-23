@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="../../node_modules/vue/dist/vue.min.js"></script>
+</head>
+
+<body>
+    <div id="app">
+        <input type="text" @keyup.esc="clean" @keyup.enter="commit">
+    </div>
+    <script>
+        new Vue({
+            el: '#app',
+            methods: {
+                clean(e) {
+                    e.target.value = ''
+                },
+                commit(e) {
+                    e.target.value = '触发了 commit 方法'
+                }
+            }
+        })
+    </script>
+</body>
+
+</html>
