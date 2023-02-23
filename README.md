@@ -5,7 +5,7 @@
 ## Build Setup
 
 # tutorial
-[Go](https://blog.capricediary.com/default/122.html)
+[Go to the blog](https://blog.capricediary.com/default/122.html)
 
 # command
 ``` bash
