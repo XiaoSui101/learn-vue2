@@ -4,9 +4,10 @@
 
 ## Build Setup
 
-# tutorial[解说地址]
+# tutorial
 [Go](https://blog.capricediary.com/default/122.html)
 
+# command
 ``` bash
 # install dependencies
 npm install
