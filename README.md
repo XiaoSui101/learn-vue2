@@ -1,4 +1,4 @@
-# learn2
+# Learn - Vue 2
 
 > A Vue.js project
 
