@@ -4,8 +4,8 @@
 
 ## Build Setup
 
-# 解说地址
-[点我前往](https://blog.capricediary.com/default/122.html)
+# tutorial[解说地址]
+[Go](https://blog.capricediary.com/default/122.html)
 
 ``` bash
 # install dependencies
